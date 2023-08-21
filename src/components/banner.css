@@ -1,0 +1,25 @@
+.banner-container {
+    display: flex;
+    align-items: center; /* Align items vertically */
+  }
+  
+  .banner-container img {
+    border-radius: 0.25rem;
+    display: block;
+    width: 30%; /* Adjust the width as needed */
+    max-height: 500px; /* Limit the maximum height */
+    margin-top: 50px;
+    margin-left: 100px;
+  }
+  
+  .banner-content {
+    margin-left: 50px;
+    text-align: start;
+    transition: all 0.3s ease-in; /* Add a transition effect to all properties with a duration of 0.3 seconds and ease timing function */
+  }
+  
+  .banner-content:hover {
+    margin-left: 0; /* Change the margin on hover to create a transition effect */
+  }
+  
+  

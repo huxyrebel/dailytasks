@@ -1,0 +1,47 @@
+.container{
+    margin-top: 100px;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+}
+.bb img{
+    max-height: 500px;
+}
+.content{
+       display: flex;
+    text-align: center;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(20px); /* Start the image 20px below its normal position */
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0); /* Move the image back to its normal position */
+    }
+  }
+  
+  /* Apply the animation to the images */
+  img {
+    animation: fadeIn 1s ease-in-out; /* Adjust the duration (1s) and easing as needed */
+    animation-fill-mode: forwards; /* Keep the final state of the animation */
+    opacity: 0; /* Start with the image hidden */
+  }
+  img:hover{
+    transform: scale(3); 
+ 
+  }
+  
+  /* Delay each image with different animation delays */
+  img:nth-child(1) {
+    animation-delay: 0.5s; /* Delay the first image by 0.5 seconds */
+  }
+  
+  img:nth-child(2) {
+    animation-delay: 1s; /* Delay the second image by 1 second */
+  }
+  
