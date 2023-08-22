@@ -1,0 +1,86 @@
+
+body {
+  background-color: #2b2d65; /* Apply the background color to the entire page */
+  margin: 0; /* Remove any default margin */
+  padding: 0; /* Remove any default padding */
+}
+.he h3{
+    font-family: 'Manrope', sans-serif;
+    color: white;
+}
+
+/* Card.css */
+/* Header.css */
+.header-container {
+    background-color: #2b2d65;
+    padding: 20px;
+    
+  }
+  
+.ppp{
+  margin-top: 50px;
+}
+  
+   
+  
+
+
+.custom-card.show {
+  opacity: 0; /* Show the cards with opacity 1 */
+}
+
+
+.custom-card img {
+  max-width: 100%;
+  max-height: 100%; /* Ensures all images have the same height */
+}
+
+.custom-card .card-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.custom-card .card-text {
+  font-size: 1rem;
+  color: #555;
+}
+
+
+/* card.css */
+/* card.css */
+/* card.css */
+.custom-card {
+  border: 1px solid #ccc;
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+  height: 100%;
+  opacity: 0;
+  animation: fadeIn 0.5s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px); /* Start with a slight upward animation */
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.custom-card.fade-out {
+  animation: fadeOut 0.5s ease-in-out forwards;
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(20px); /* End with a slight upward animation */
+  }
+}
