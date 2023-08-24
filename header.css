@@ -1,0 +1,50 @@
+.heading h1{
+color: #2D4C41;
+}
+/* header.css */
+
+/* Add some margin to the icons */
+.icons {
+    display: flex;
+    gap:10px;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  /* Adjust the form to display inline */
+  .form-inline {
+    display: flex;
+    align-items: center;
+  }
+  
+  .wide-input {
+    width: 700px; /* Adjust the width as needed */
+    height: 40px; /* Adjust the height as needed */
+    font-size: 16px; /* Adjust the font size as needed */
+  }
+  .Sub{
+    border:none ;
+    border-radius: 0.50rem;
+    background-color: #EBA463;
+    height: 40px;
+  }
+  
+  
+  
+  
+  @media (max-width: 768px) {
+    .heading h1 {
+      font-size: 20px; /* Adjust font size for smaller screens */
+    }
+    .icons {
+      justify-content: flex-start; /* Align icons to the left on smaller screens */
+      margin-top: 5px; /* Adjust top margin */
+    }
+    .wide-input {
+      width: 100%; /* Make the input full width on smaller screens */
+    }
+    .Sub {
+      width: 100%; /* Make the button full width on smaller screens */
+    }
+  }
+  

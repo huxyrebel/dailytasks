@@ -1,0 +1,20 @@
+.p{
+background-image: url(../components/a.jpeg);
+background-size: cover;
+height: 300px;
+border-radius: 0.50rem
+}
+.t{
+    background-image: url(../components/a.jpeg);
+    background-size: cover;
+    border-radius: 0.50rem;
+    height: 300px;
+
+}
+.y{
+    background-image: url(../components/a.jpeg);
+    background-size: cover;
+    border-radius: 0.50rem;
+    height: 300px;
+    width: 300px;
+}

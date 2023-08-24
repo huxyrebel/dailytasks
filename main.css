@@ -1,0 +1,21 @@
+/* main.css */
+
+.half-1 {
+    background-image: url(../components/q.jpeg);
+    background-size: cover; /* Cover the entire column with the background image */
+    height: 400px; /* Adjust the height to your preferred value */
+    width: 800px;
+    border-radius: .50rem;
+  }
+  .half-22{
+    background-image: url(../components/w.jpeg);
+    background-size: cover;
+    height: 100px;
+    width: 250px;
+  }
+  .e{
+    background-color: Lightgrey;
+    width: 70%;
+    border-radius: 0.50rem;
+  }
+  
