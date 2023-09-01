@@ -1,26 +1,32 @@
-// src/App.js
-import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Sidebar from './components/sidebar';
-import Home from './components/Home';
-import About from './components/About';
-import Services from './components/Services';
-import Contact from './components/Contact';
-
+import React, { useState } from 'react';
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'; // Import 'Routes'
+import ProductList from './components/ProuctList';
+import Cart from './components/Cart';
 function App() {
+  const [cart, setCart] = useState([]);
+
+  const addToCart = (product) => {
+    setCart([...cart, product]);
+  };
+
   return (
     <Router>
-      <div className="App">
-        <Sidebar />
+      <div>
+        <nav>
+          <ul>
+            <li>
+              <Link to="/">Home</Link>
+            </li>
+            <li>
+              <Link to="/Cart">Cart</Link>
+            </li>
+          </ul>
+        </nav>
 
-        <div className="content">
-          <Routes>
-            <Route path="/" exact element={<Home/>} />
-            <Route path="/About" element={<About/>} />
-            <Route path="/Services" element={<Services/>} />
-            <Route path="/Sontact" element={<Contact/>} />
-          </Routes>
-        </div>
+        <Routes> {/* Wrap your Routes in a Routes element */}
+          <Route path="/" element={<ProductList addToCart={addToCart} />} />
+          <Route path="/Cart" element={<Cart cart={cart} />} />
+        </Routes>
       </div>
     </Router>
   );
