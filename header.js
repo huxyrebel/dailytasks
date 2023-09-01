@@ -1,45 +1,43 @@
 import React from 'react';
-import '../components/header.css';
-import { FiBox } from 'react-icons/fi';
-import { AiOutlineHeart } from 'react-icons/ai';
-import { RiShoppingBasketFill } from 'react-icons/ri';
-import { AiOutlineSearch } from 'react-icons/ai';
-
+import "../components/header.css"
 function Header() {
   return (
-    <div className="container d-flex mt-3">
-      <div className="row">
-        {/* Heading */}
-        <div className="col-12 col-md-1 heading"> {/* Adjust the column width */}
-          <h1>Olly</h1>
-        </div>
+    <div className='container d-flex justify-content-center'>
+      <nav className="navbar navbar-expand-lg ">
+        <div className="container-fluid">
+        <img src='https://www.pchotels.com/asset/images/logo.svg'  alt='Logo' style={{width:"10%",backgroundColor:'black'}} />
 
-        {/* Icons */}
-        <div className="col-12 col-md-4 icon-col"> {/* Adjust the column width */}
-          <div className="icons">
-            <FiBox style={{ fontSize: "24px" }} />
-            <AiOutlineHeart style={{ fontSize: "24px" }} />
-            <RiShoppingBasketFill style={{ fontSize: "24px" }} />
+          <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span className="navbar-toggler-icon"></span>
+          </button>
+          <div className="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+              <li className="nav-item">
+                <a className="nav-link active" aria-current="page" href="#">Find a Hotel</a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="#">Offers</a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="#">Event&Celebration</a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="#">Dining</a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="#">Rewards Programme</a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="#">More</a>
+              </li>
+              <li>
+              <button className="booknow"  type="submit">Search</button>
+
+              </li>
+              </ul>
           </div>
         </div>
-
-        {/* Navbar */}
-        <div className="col-12 col-md-7"> {/* Adjust the column width */}
-          <nav className="navbar navbar-light">
-            <form className="form-inline">
-              <input
-                className="form-control wide-input"
-                type="search"
-                placeholder="Search"
-                aria-label="Search"
-              />
-              <button className="Sub" style={{ width: "50px" }}>
-                <AiOutlineSearch />
-              </button>
-            </form>
-          </nav>
-        </div>
-      </div>
+      </nav>
     </div>
   );
 }

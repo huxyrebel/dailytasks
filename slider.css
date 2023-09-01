@@ -1,0 +1,54 @@
+/* Style for the slider container */
+.slider-container {
+    width: 100%;
+    max-width: 100%;
+  }
+  
+  /* Style for the images inside the slider */
+  .slider-container img {
+    width: 100%;
+    height: 100%; /* Make all images the same height */
+  }
+  
+  /* Style for the custom arrows */
+  .slick-arrow {
+    position: absolute;
+    top: 45%; /* Move the arrows up */
+    transform: translateY(-50%);
+    z-index: 1;
+    cursor: pointer;
+    font-weight: bold;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+  }
+  
+  
+  
+  .slick-prev {
+    left: 20px;
+  }
+  
+  .slick-next {
+    right: 20px;
+  }
+  
+  /* Style for the dots */
+  .slick-dots {
+    position: absolute;
+    bottom: 10px;
+    width: 100%; /* Make the dots span the full width */
+    text-align: center;
+  }
+  
+  .slick-dots li {
+    display: inline-block;
+    margin: 0 5px;
+  }
+  
+  /* Style for the active dot */
+  .slick-dots li.slick-active button {
+    background-color: grey; /* Change the active dot's color */
+  }
+  

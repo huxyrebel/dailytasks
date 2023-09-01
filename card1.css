@@ -1,0 +1,102 @@
+.card1-container h6{
+color: white;
+margin-top: 30%;
+font-size: larger;
+}
+
+.q{
+background-image: url(https://www.pchotels.com/asset/images/hotel-04.jpg);
+background-size: cover;
+height:300px
+
+}
+
+.w{
+background-image: url(https://www.pchotels.com/asset/images/meetings-home.jpg);
+background-size: cover;
+}
+.e{
+background-image: url(https://www.pchotels.com/asset/images/hotel-02.jpg);
+background-size: cover;
+}
+.r{
+background-image: url(https://www.pchotels.com/asset/images/pc-hotel-karachi.jpg);
+background-size: cover;
+}
+
+.q:hover {
+  transform: scaleY(1.2); /* Scale the element along the Y-axis */
+  transform-origin: bottom; /* Set the transformation origin to the top */
+  transition: transform 0.3s ease; /* Add a smooth transition */
+}
+
+.w:hover {
+  transform: scaleY(1.2);
+  transform-origin: bottom;
+  transition: transform 0.3s ease;
+}
+
+.e:hover {
+  transform: scaleY(1.2);
+  transform-origin: bottom;
+  transition: transform 0.3s ease;
+}
+
+.r:hover {
+  transform: scaleY(1.2);
+  transform-origin: bottom;
+  transition: transform 0.3s ease;
+} 
+
+.q:hover h6.replies {
+    display: none;
+  }
+  
+  .q:hover p.comment {
+    display: block;
+    color: white;
+    margin-top: 30%;
+  }
+  p.comment{
+    display:none ;
+  }
+
+
+  .w:hover h6.replies {
+    display: none;
+  }
+  
+  .w:hover p.comment {
+    display: block;
+    color: white;
+    margin-top: 30%;
+  }
+  p.comment{
+    display:none ;
+  }
+
+  .e:hover h6.replies {
+    display: none;
+  }
+  
+  .e:hover p.comment {
+    display: block;
+    color: white;
+    margin-top: 30%;
+  }
+  p.comment{
+    display:none ;
+  }
+
+  .r:hover h6.replies {
+    display: none;
+  }
+  
+  .r:hover p.comment {
+    display: block;
+    color: white;
+    margin-top: 30%;
+  }
+  p.comment{
+    display:none ;
+  }

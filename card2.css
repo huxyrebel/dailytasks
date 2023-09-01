@@ -1,0 +1,26 @@
+/* Card2.css */
+
+.card2-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px; /* Add padding for equal spacing on left and right */
+    text-align: center;
+    max-width: 800px; /* Set a maximum width for the container */
+    margin: 0 auto; /* Auto margin for centering horizontally */
+    background-color: rgb(201, 246, 231);
+    background-image: url();
+  }
+  
+  .custom-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .custom-col img {
+    max-width: 100%; /* Make images responsive within their container */
+    height: auto;
+    margin-top: 20px; /* Add some space between text and image */
+  }
